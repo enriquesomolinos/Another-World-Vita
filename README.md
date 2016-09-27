@@ -1,40 +1,56 @@
+# Another World Vita
+Another World Vita is a port of the classic game Another World for PSVita. Based on the 0.2.1. version created by Gregory Montoir.
 
-# rawgl README
+# About
+Another World, also known as Out of This World in North America and Outer World (アウターワールド Autā Wārudo?) in Japan, is a 1991 cinematic platformer action-adventure game designed by Éric Chahi for Delphine Software. The game tells a story of Lester, a young scientist who, as a result of an experiment gone wrong, finds himself in a dangerous alien world where he is forced to fight for his survival.
 
-## About
+# Requirements
+A Vita system with Henkaku installed to run homebrew.
 
-rawgl is a re-implementation of the engine used in the game Another World.  
+Install the vpk file in your Vita
 
-## Supported Versions
+Put the original data files in the folder **ux0:app/SOMO00002/DATA**
 
-- Amiga and PC DOS releases (Bank*)
-- 15th anniversary edition (Pak01.pak)
-- 20th anniversary edition (game/*)
-- Windows 3.1 release (Bank)
-- 3DO release (GameData/*)
+Original files can be downloaded in serveral sites, for example:
 
-## Running
+`http://www.myabandonware.com/game/out-of-this-world-18g#download`
 
-You will need the original files.
+#Button configuration
 
-To start the game, you can either :  
-- put the game's datafiles in the same directory as the executable  
-- use the --datapath command line option to specify the datafiles directory  
 
-In game hotkeys :
+Arrow Keys:     move Lester
 
-    Arrow Keys      move Lester
-    Enter/Space     run/shoot
-    C               enter a code to jump at a specific level
-    P               pause the game 
-    Alt X           exit the game 
-    Ctrl F          toggle fast mode 
+Left stick:     move Lester
 
-## Credits
+X:              run/shoot
+
+
+# How to compile
+
+You need the vitasdk installed and SDL libraries to compile this game. I used this commit:
+
+https://github.com/Cpasjuste/SDL-Vita/commit/361262981e260bceb8a0f63195d80b778aa5e141
+
+Simply, launch the commnad:
+
+`make`
+
+#Enchancements
+
+Feel free to create new issues and pull request to enchance this fantastic game.
+
+# Credits
+
+Gregory Montoir for the PC version.
 
 Eric Chahi, obviously, for making this great game.
 
-## Contact
+# Thanks to
 
-Gregory Montoir, cyx@users.sourceforge.net
+Xerpi for the SDL2 port for Vita. (https://github.com/xerpi)
 
+Cpasjuste for solving some issues of SDL2 port. (https://github.com/Cpasjuste)
+
+# Original version
+
+Original version: https://github.com/cyxx/rawgl
